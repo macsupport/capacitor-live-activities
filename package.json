@@ -1,6 +1,6 @@
 {
   "name": "@vetdrugs/capacitor-live-activities",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Capacitor plugin for iOS Live Activities and Dynamic Island - supports CRI timers, CPR timers, and multi-timer management",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -37,27 +37,27 @@
     "lint": "npm run eslint && npm run prettier -- --check",
     "fmt": "npm run eslint -- --fix && npm run prettier -- --write",
     "eslint": "eslint . --ext ts",
-    "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
+    "prettier": "prettier \"**/*.{css,html,ts,js,java}\" --plugin=prettier-plugin-java",
     "build": "npm run clean && tsc && rollup -c rollup.config.mjs",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@capacitor/core": "^7.0.0",
-    "@capacitor/ios": "^7.0.0",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
     "@ionic/eslint-config": "^0.4.0",
     "@ionic/prettier-config": "^4.0.0",
-    "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
-    "prettier-plugin-java": "^2.6.0",
-    "rimraf": "^5.0.5",
-    "rollup": "^4.12.0",
+    "eslint": "^8.57.1",
+    "prettier": "^3.6.2",
+    "prettier-plugin-java": "^2.7.7",
+    "rimraf": "^6.1.0",
+    "rollup": "^4.53.2",
     "@rollup/plugin-node-resolve": "^15.2.3",
-    "typescript": "~5.4.0"
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "@capacitor/core": "^7.0.0"
+    "@capacitor/core": ">=8.0.0"
   },
   "capacitor": {
     "ios": {
